@@ -19,3 +19,15 @@ To generate the solution files, execute:
 2. [ODE](http://www.ode.org/), a physics engine
 3. [pugixml](http://pugixml.org/), an XML parser (header-only)
 4. [SFML](https://www.sfml-dev.org/), a small multimedia framework
+
+## Session #1
+
+* Overview of a typical game engine architecture.
+* Architecture principle: rely on lower level, cannot access to higher level.
+* Singleton pattern and variations.
+* CRTP.
+* Code duplication to be avoided.
+* Division of responsibilities.
+* Interfaces to break dependency cycles.
+* Dependency injection, dependency inversion.
+* Null object pattern.
