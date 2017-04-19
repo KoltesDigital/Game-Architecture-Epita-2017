@@ -26,7 +26,7 @@ namespace engine
 #endif
 
 		private:
-			std::size_t hash;
+			std::size_t _hash;
 
 			static std::hash<std::string> hasher;
 
@@ -35,7 +35,7 @@ namespace engine
 			operator const std::string &() const;
 
 		private:
-			std::string str;
+			std::string _str;
 #endif
 		};
 	}

@@ -12,22 +12,22 @@ namespace engine
 		public:
 			static T &getInstance()
 			{
-				assert(instance != nullptr); // Instance should be assigned.
-				return *instance;
+				assert(_instance != nullptr); // Instance should be assigned.
+				return *_instance;
 			}
 
 			static T *assign(T* newInstance = nullptr)
 			{
-				auto previousInstance = instance;
-				instance = newInstance;
+				auto previousInstance = _instance;
+				_instance = newInstance;
 				return previousInstance;
 			}
 
 		private:
-			static T *instance;
+			static T *_instance;
 		};
 
 		template <typename T>
-		T *Provider<T>::instance = nullptr;
+		T *Provider<T>::_instance = nullptr;
 	}
 }

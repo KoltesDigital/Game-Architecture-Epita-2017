@@ -19,10 +19,8 @@ namespace engine
 				virtual void draw() override;
 
 			protected:
-				graphics::ShapeList shapeList;
-				dGeomID collisionGeomId;
-
-				bool isWalking{ false };
+				graphics::ShapeList _shapeList;
+				dGeomID _collisionGeomId;
 			};
 		}
 	}
