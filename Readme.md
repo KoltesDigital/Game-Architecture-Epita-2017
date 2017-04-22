@@ -31,3 +31,12 @@ To generate the solution files, execute:
 * Interfaces to break dependency cycles.
 * Dependency injection, dependency inversion.
 * Null object pattern.
+
+## Session #2
+
+* pImpl
+* RAII
+* Ownership
+* std::unique_ptr
+* Move semantics
+* Interface with opaque structures through handlers
