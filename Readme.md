@@ -34,9 +34,10 @@ To generate the solution files, execute:
 
 ## Session #2
 
-* pImpl
-* RAII
-* Ownership
-* std::unique_ptr
-* Move semantics
-* Interface with opaque structures through handlers
+* pImpl.
+* RAII.
+* Ownership.
+* std::unique_ptr.
+* Move semantics.
+* Interface with opaque structures through handlers.
+* Pool allocators.
