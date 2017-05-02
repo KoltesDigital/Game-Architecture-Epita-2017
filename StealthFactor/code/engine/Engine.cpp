@@ -49,11 +49,14 @@ namespace engine
 			return false;
 		}
 
+		gameplayManager.setUp();
+
 		return true;
 	}
 
 	void Engine::tearDown()
 	{
+		gameplayManager.tearDown();
 		physicsManager.tearDown();
 		graphicsManager.tearDown();
 	}
@@ -72,14 +75,10 @@ namespace engine
 			inputManager.clear();
 
 			physicsManager.update();
-			graphicsManager.update();
+			graphicsManager.pollEvents();
 			gameplayManager.update();
 
-			graphicsManager.clear();
-
-			gameplayManager.draw();
-
-			graphicsManager.display();
+			graphicsManager.draw();
 		}
 	}
 
