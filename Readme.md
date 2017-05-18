@@ -41,3 +41,11 @@ To generate the solution files, execute:
 * Move semantics.
 * Interface with opaque structures through handlers.
 * Pool allocators.
+
+## Sessions #3
+
+* Specialization through inheritance.
+* Specialization through components, entity-component-system.
+* Camera system.
+* Separation between Model and View.
+* Visitor pattern.
