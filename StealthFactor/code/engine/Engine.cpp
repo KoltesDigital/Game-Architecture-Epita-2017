@@ -9,7 +9,7 @@
 namespace engine
 {
 	Engine::Engine()
-		: graphicsManager{ *this, gameplayManager }
+		: graphicsManager{ *this }
 		, gameplayManager{ graphicsManager, inputManager, physicsManager }
 	{
 	}
