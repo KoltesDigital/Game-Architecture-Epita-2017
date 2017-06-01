@@ -42,10 +42,17 @@ To generate the solution files, execute:
 * Interface with opaque structures through handlers.
 * Pool allocators.
 
-## Sessions #3
+## Session #3
 
 * Specialization through inheritance.
 * Specialization through components, entity-component-system.
 * Camera system.
 * Separation between Model and View.
 * Visitor pattern.
+
+## Session #4
+
+* Serialization.
+* More visitor pattern.
+* Unit tests.
+* More separation between Model and View.
