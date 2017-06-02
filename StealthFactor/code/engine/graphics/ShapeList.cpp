@@ -46,11 +46,11 @@ namespace engine
 			}
 		};
 
-		ShapeList::ShapeList(ShapeListDescriptor &descriptor)
+		ShapeList::ShapeList(const ShapeListDescriptor &descriptor)
 		{
 			ShapeListInstantiater instantiater{ _shapes };
 
-			for (auto &shapeDescriptor : descriptor.getShapeDescriptors())
+			for (auto &shapeDescriptor : descriptor.shapeDescriptors)
 			{
 				shapeDescriptor->accept(instantiater);
 			}

@@ -9,8 +9,8 @@
 namespace engine
 {
 	Engine::Engine()
-		: graphicsManager{ *this }
-		, gameplayManager{ graphicsManager, inputManager, physicsManager }
+		: graphicsManager{ assetsManager, *this }
+		, gameplayManager{ assetsManager, graphicsManager, inputManager, physicsManager }
 	{
 	}
 

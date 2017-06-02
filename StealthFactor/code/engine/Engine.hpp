@@ -2,6 +2,7 @@
 
 #include <string>
 #include <engine/EventListener.hpp>
+#include <engine/assets/AssetsManager.hpp>
 #include <engine/gameplay/GameplayManager.hpp>
 #include <engine/graphics/GraphicsManager.hpp>
 #include <engine/physics/PhysicsManager.hpp>
@@ -26,6 +27,7 @@ namespace engine
 		void onEvent(const sf::Event &event) override;
 
 	private:
+		assets::Manager assetsManager;
 		gameplay::Manager gameplayManager;
 		graphics::Manager graphicsManager;
 		input::Manager inputManager;
