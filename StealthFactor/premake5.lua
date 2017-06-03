@@ -2,7 +2,6 @@ characterset "Unicode"
 
 defines {
 	"_USE_MATH_DEFINES",
-	"dSINGLE",
 }
 
 flags {
@@ -62,7 +61,6 @@ filter "platforms:Win64"
 function runsWithDependencies()
 	filter "configurations:Debug"
 		links {
-			"ode_singled",
 			"sfml-graphics-d",
 			"sfml-network-d",
 			"sfml-system-d",
@@ -71,7 +69,6 @@ function runsWithDependencies()
 
 	filter "configurations:Release"
 		links {
-			"ode_single",
 			"sfml-graphics",
 			"sfml-network",
 			"sfml-system",

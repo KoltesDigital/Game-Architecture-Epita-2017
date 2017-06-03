@@ -10,7 +10,8 @@ namespace engine
 {
 	Engine::Engine()
 		: graphicsManager{ assetsManager, *this }
-		, gameplayManager{ assetsManager, graphicsManager, inputManager, physicsManager }
+		, backendManager{ frontendManager, assetsManager, inputManager }
+		, frontendManager{ assetsManager, graphicsManager }
 	{
 	}
 
@@ -44,20 +45,14 @@ namespace engine
 			return false;
 		}
 
-		if (!physicsManager.setUp())
-		{
-			return false;
-		}
-
-		gameplayManager.setUp();
+		frontendManager.setUp();
 
 		return true;
 	}
 
 	void Engine::tearDown()
 	{
-		gameplayManager.tearDown();
-		physicsManager.tearDown();
+		frontendManager.tearDown();
 		graphicsManager.tearDown();
 	}
 
@@ -65,7 +60,7 @@ namespace engine
 	{
 		running = true;
 
-		gameplayManager.loadMap(startMap);
+		backendManager.loadMap(startMap);
 
 		sf::Clock clock;
 		while (running)
@@ -74,9 +69,8 @@ namespace engine
 
 			inputManager.clear();
 
-			physicsManager.update();
 			graphicsManager.pollEvents();
-			gameplayManager.update();
+			backendManager.update();
 
 			graphicsManager.draw();
 		}

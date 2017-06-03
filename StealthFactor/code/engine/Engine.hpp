@@ -3,9 +3,9 @@
 #include <string>
 #include <engine/EventListener.hpp>
 #include <engine/assets/AssetsManager.hpp>
-#include <engine/gameplay/GameplayManager.hpp>
+#include <engine/backend/BackendManager.hpp>
+#include <engine/frontend/FrontendManager.hpp>
 #include <engine/graphics/GraphicsManager.hpp>
-#include <engine/physics/PhysicsManager.hpp>
 #include <engine/input/InputManager.hpp>
 
 namespace engine
@@ -28,10 +28,10 @@ namespace engine
 
 	private:
 		assets::Manager assetsManager;
-		gameplay::Manager gameplayManager;
+		backend::Manager backendManager;
+		frontend::Manager frontendManager;
 		graphics::Manager graphicsManager;
 		input::Manager inputManager;
-		physics::Manager physicsManager;
 
 		bool running;
 		float deltaTime;
