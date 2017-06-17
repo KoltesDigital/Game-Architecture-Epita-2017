@@ -56,3 +56,16 @@ To generate the solution files, execute:
 * More visitor pattern.
 * Unit tests.
 * More separation between Model and View.
+
+## Session #5
+
+* Command pattern.
+* Advanced Command: Undo-Redo.
+* Mock classes.
+
+## Session #6
+
+* Some tricks: override, final, non-copyable.
+* Metrics.
+* Some exploration in UE4.
+* Behavior tree.
