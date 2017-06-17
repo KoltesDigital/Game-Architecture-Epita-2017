@@ -67,7 +67,7 @@ A resource that can be acquired and released may be represented with a class, wh
 For instance:
 
 * File access is typically wrapped by a File class, which automatically closes the handle at destruction;
-* std::mutex_lock automatically locks and unlocks a mutex;
+* std::lock_guard automatically locks and unlocks a mutex;
 * std::unique_ptr automatically deletes a pointer.
 
 ## Memory ownership
